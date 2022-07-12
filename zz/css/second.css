@@ -1,0 +1,293 @@
+body{
+    color: #000;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+li{
+    list-style: none
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+del{
+    text-decoration: none;
+    padding-left: 4px;
+    font-weight: 600;
+    color: #2e89ff;
+}
+
+.tool{
+    height: 60px;
+}
+
+/* 顶部菜单栏 */
+.menuBar{
+    background-color: #fff;
+}
+.flexBar{
+    position: relative;
+    position:fixed;
+    background-color: #fff;
+    /* 设置为最顶层div */
+    z-index: 1;     
+    border-bottom: 1px solid rgb(208, 208, 208);      
+}
+.flexBar, .logo, .nav, .word, .nav-u, .item{
+    display: flex;
+}
+.flexBar{
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 100%;
+}
+.logo, .nav, .word{
+    height: 50px;
+    margin: 5px;
+}
+.logo, .word{
+    width: 20%;
+}
+.nav{
+    width: 80%;
+    justify-content: center;
+}
+.item{
+    /* width: 64px; */
+    line-height: 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.item a:hover{
+    color: #2e89ff;
+}
+.word{
+    line-height: 50px;
+}
+.logo{
+    justify-content: end;
+}
+.word a{
+    border: 1px solid #2e89ff;
+    width: 120px;
+    text-align: center;
+    border-radius: 50px;
+    color: #2e89ff;
+    background-color: #fff;
+}
+.word a:hover{
+    color: #fff;
+    background-color: #2e89ff;
+}
+
+
+/* 首页 */
+.home{
+    position: relative;
+    height: 600px;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home-container{
+    /* border: 1px solid hwb(300 2% 0%); */
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+    padding:200px 0;
+}
+.row{
+    /* border: 1px solid purple; */
+    background-color:rgba(252, 252, 252, 0);
+    height: 200px;
+    
+}
+.row:hover{
+    background-color:rgba(252, 252, 252, 0.344);
+}
+.row, .picture, .content, .p, .y{
+    display: flex;
+}
+.content, .picture{
+    width: 50%;
+}
+.picture{
+    justify-content:end ;
+    height: 180px;
+}
+.picture img{
+    opacity: 1 ;
+    padding:10px 30px;
+}
+
+.p{
+    flex-direction: column;
+}
+#y1{
+    height: 40%;
+}
+#y2{
+    height: 15%;
+}
+#y3{
+    height: 15%;
+}
+#y4{
+    height: 30%;
+    line-height: 60px;
+    
+}
+.y h2{
+    line-height: 80px ;
+    padding-right:14px;
+}
+.pp{
+    line-height: 80px;
+    padding-right:6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.y h2{
+    color: #2e89ff;
+}
+#y4 a{
+    border: 2px solid #2e89ff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    border-radius: 20px;
+    color: #2e89ff;
+}
+#y4 a:hover{
+    color: #fff;
+    background-color: #2e89ff;
+}
+
+/* 关于我 */
+.about{
+    /* border: 2px solid red; */
+    border-bottom: 1px solid rgb(226, 221, 221);
+    position: relative;
+    height: 600px;
+}
+.about-container{
+    /* border: 2px solid royalblue; */
+    height: 100%;
+}
+.title{
+    /* border: 2px solid greenyellow; */
+    height: 70px;
+    margin-top:  50px;
+}
+.tit{
+    /* border: 1px solid aquamarine; */
+    line-height: 70px;
+    width: 40%;
+    margin-left: 15%;
+    font-size:x-large;
+    font-weight: 900;
+    color: #2e89ff;
+    
+}
+
+.tab{
+    /* border: 2px solid rgb(243, 66, 142); */
+    height: 480px;
+    width: 70%;
+    margin: 35px 15%;
+    
+}
+.about-container, .title, .tab{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    /* border: 2px solid rgb(38, 181, 159); */
+    /* height: 100%;
+    width: 100%; */
+    table-layout: fixed;
+      
+}
+
+td{
+    /* border: 2px solid rgb(17, 36, 33); */
+    background-color: #fff;
+    border-radius: 20px;
+    height: 150px;
+    width: 314px;
+   
+}
+td:hover{
+    background-color: #e2b7354c;
+}
+#p1, #p2 {
+    /* border: 1px dotted red; */
+    font-size: 12px;
+    line-height: 24px;
+    text-indent: 2em;
+}
+#p1{
+    color: #2e89ff;
+    font-weight: 900;
+}
+p{
+    font-size: 12px;
+    line-height: 24px;
+    text-indent: 2em;
+}
+.tab a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+
+/* 我的生活 */
+.live{
+    /* border: 2px solid red; */
+    position: relative;
+    height: 640px;
+}
+.live-container{
+    /* border: 2px solid royalblue; */
+    height: 100%;
+}
+
+.live-container, .title, .music, ins, .audio{
+    display: flex;
+    flex-direction: column;
+}
+.music{
+    border: 2px solid #2e89ff;
+    border-radius: 20px;
+    height: 480px;
+    width: 70%;
+    margin: 10px 15%;
+}
+.music:hover{
+    background-image: url(../img/bg4.jpg);
+    background-size: 100%;
+}
+ins{
+    
+    font-size: large;
+    text-decoration: none;
+    color: #2e89ff;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+h4{
+    font-size:large;
+    color: #2e89ff;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+audio{
+    margin-left: 40px;
+}
